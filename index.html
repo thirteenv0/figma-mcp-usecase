@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login UI Concept</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: {
+                            primary: '#F9ED32',
+                            secondary: '#F2D335',
+                            tertiary: '#D9BD32'
+                        },
+                        gray: {
+                            input: 'rgba(176, 186, 195, 0.4)',
+                            text: '#7C838A'
+                        },
+                        background: 'rgba(230, 243, 255, 0.75)'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    },
+                    borderRadius: {
+                        '25': '25px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="bg-background">
+    <div class="min-h-screen w-screen flex">
+        <!-- Left side with blobs and image -->
+        <div class="w-full lg:w-1/2 relative overflow-hidden">
+            <!-- Blob shapes -->
+            <div class="absolute z-0 top-20 left-0">
+                <img src="images/blob3.svg" alt="Blob" class="w-[526px]">
+            </div>
+            <div class="absolute z-10 top-16 left-24">
+                <img src="images/blob2.svg" alt="Blob" class="w-[530px]">
+            </div>
+            <div class="absolute z-20 top-[488px] left-0">
+                <img src="images/blob1.svg" alt="Blob" class="w-[550px]">
+            </div>
+            <!-- Main image -->
+            <div class="absolute z-30 top-48 left-12">
+                <img src="images/main-image.svg" alt="Login" class="w-[419px]">
+            </div>
+        </div>
+        
+        <!-- Right side with form -->
+        <div class="w-full lg:w-1/2 bg-white rounded-l-25 flex items-center justify-center">
+            <div class="max-w-[600px] px-8 md:px-12 py-12">
+                <!-- Form title -->
+                <h1 class="font-semibold text-2xl md:text-[26px] text-center mb-12">Create your Free Account</h1>
+                
+                <!-- Full Name Input -->
+                <div class="mb-10">
+                    <label for="fullName" class="block font-medium text-xl text-gray-text">Full Name</label>
+                    <div class="mt-2 relative">
+                        <input type="text" id="fullName" 
+                            class="w-full h-16 bg-gray-input rounded-[20px] px-10 font-normal text-xl placeholder-black/50" 
+                            placeholder="Enter your Full Name here">
+                    </div>
+                </div>
+                
+                <!-- Email Input -->
+                <div class="mb-10">
+                    <label for="email" class="block font-medium text-xl text-gray-text">Email</label>
+                    <div class="mt-2 relative">
+                        <input type="email" id="email" 
+                            class="w-full h-16 bg-gray-input rounded-[20px] px-10 font-normal text-xl placeholder-black/50" 
+                            placeholder="Enter your Email here">
+                    </div>
+                </div>
+                
+                <!-- Password Input -->
+                <div class="mb-12">
+                    <label for="password" class="block font-medium text-xl text-gray-text">Password</label>
+                    <div class="mt-2 relative">
+                        <input type="password" id="password" 
+                            class="w-full h-16 bg-gray-input rounded-[20px] px-10 font-normal text-xl placeholder-black/50" 
+                            placeholder="Enter your Password here">
+                    </div>
+                </div>
+                
+                <!-- Create Account Button -->
+                <div class="mb-14">
+                    <button type="button" class="w-full md:w-[340px] h-[60px] bg-yellow-primary rounded-[10px] font-medium text-2xl flex items-center justify-center mx-auto">
+                        Create Account
+                    </button>
+                </div>
+                
+                <!-- Login link -->
+                <div class="mb-8">
+                    <p class="text-lg font-normal">Already have a account? <a href="#" class="underline">Log in</a></p>
+                </div>
+                
+                <!-- OR divider -->
+                <div class="mb-8 flex items-center justify-center">
+                    <span class="text-2xl font-medium text-[#B0BAC3]">- OR -</span>
+                </div>
+                
+                <!-- Social login buttons -->
+                <div class="flex flex-col md:flex-row gap-6 justify-center">
+                    <!-- Google button -->
+                    <button class="flex items-center border border-gray-text rounded-[15px] w-full md:w-[220px] h-[55px] px-4">
+                        <img src="images/google-icon.svg" alt="Google" class="w-[50px] h-[50px]">
+                        <span class="ml-2 font-medium text-sm text-gray-text">Sign up with Google</span>
+                    </button>
+                    
+                    <!-- GitHub button -->
+                    <button class="flex items-center border border-gray-text rounded-[15px] w-full md:w-[220px] h-[55px] px-4">
+                        <img src="images/github-icon.svg" alt="GitHub" class="w-[50px] h-[50px]">
+                        <span class="ml-2 font-medium text-sm text-gray-text">Sign up with GitHub</span>
+                    </button>
+                </div>
+                
+                <!-- Footer credits -->
+                <div class="mt-12 text-center text-gray-text text-base">
+                    Reserved directs to Leo Barreto
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
