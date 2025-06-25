@@ -8,7 +8,7 @@ This project demonstrates how to convert a Figma design into frontend code using
 
 For a step-by-step walkthrough of how this was done using Figma MCP, check out the full guide:
 
-**[Instantly Convert Figma to Code Using Figma MCP: A Complete Usecase](https://www.figma.com/community/file/1026170425902325131/loginuiconcep)**
+**[Instantly Convert Figma to Code Using Figma MCP: A Complete Usecase](https://heymcp.io/articles/instantly-convert-figma-to-code-using-figma-mcp-a-complete-usecase/jsonx)**
 
 ## Project Structure
 
